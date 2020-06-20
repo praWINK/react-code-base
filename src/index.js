@@ -6,7 +6,6 @@ import thunk from 'redux-thunk';
 import { reducers } from './redux/reducers/index'
 import Routes from './routes';
 import logger from 'redux-logger';
-import './index.css';
 
 let Middlewares = applyMiddleware(thunk,logger);
 let store = createStore(reducers,Middlewares);

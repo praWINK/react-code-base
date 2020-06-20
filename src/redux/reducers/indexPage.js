@@ -1,6 +1,6 @@
 const INITIAL_STATE = {
    
-    countingData:{
+    receivedWidgets:{
         data: [],
         error:null,
         loading: true
@@ -11,10 +11,10 @@ const INITIAL_STATE = {
 export default function (state = INITIAL_STATE, action) {
     switch (action.type) {
         
-        case 'Fetched_Counting':
+        case 'Fetched_Widgets':
             return {
                 ...state,
-                countingData:{ 
+                receivedWidgets:{ 
                     data: action.payload,
                     error: null,
                     loading: false
