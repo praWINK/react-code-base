@@ -79,7 +79,6 @@ class IndexPage extends Component {
             </ul>
           </div>
           ) }
-          
         </div>
         {/* SIDENAV SECTION END */}
 
